@@ -3,15 +3,19 @@
 <body>
  <p>
 <h3>Idea:</h3>
- To provide an insurance to the farmers on agriculture equippments.
+ <p>To provide an insurance to the farmers on agriculture equippments.</p>
  </p>
 
 <h3>Content Description:</h3>
 
-Alexa :
-This contains the interaction between user and alexa to provide information about insurance, it's renewal and status. Alexa can also provide information about devices from IOT services exposed by shushpa.
+<p>
+<h4>Alexa :</h4>
+<p>This contains the interaction between user and alexa to provide information about insurance, it's renewal and status. Alexa can also provide information about devices from IOT services exposed by shushpa.</p>
+</p>
 
-Mobile UI :
-This is second way to interact with the service from the mobile app. Here  user can register for Agro Manager service through mobile app. This app provide health status for devices, insurance status and also trigger the notification if insurance is about to expired.
+<p>
+<h4>Mobile UI :</h4>
+<p>This is second way to interact with the service from the mobile app. Here  user can register for Agro Manager service through mobile app. This app provide health status for devices, insurance status and also trigger the notification if insurance is about to expired.</p>
+ </p>
 </body>
 
