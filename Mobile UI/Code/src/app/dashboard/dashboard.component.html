@@ -1,0 +1,90 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="snav.toggle()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <span routerLink="/home">Agro Manager</span>
+    <span class="example-spacer"></span>
+    <img src="../icon-04.png" class="img" height="50px" />
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav #snav side false class="sidenavMy">
+    <span class="mat-h1" style="padding-left: 5%;"
+      ><i class="fas fa-user-circle"></i> Welcome John</span
+    >
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home"
+        ><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a
+      >
+      <a mat-list-item routerLink="/register"
+        ><i class="fas fa-plus"></i>&nbsp;&nbsp;Agro Profile</a
+      >
+      <a mat-list-item routerLink="/settings"
+        ><i class="fas fa-cog"></i>&nbsp;&nbsp;Settings</a
+      >
+      <a mat-list-item routerLink="/login"
+        ><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content style="background-color:#fff">
+    <div class="container-fluid">
+      <mat-card class="example-card mat-elevation-z0">
+        <mat-card-header class="justify-content-center">
+          <mat-card-title>Dashboard</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="row">
+            <div class="col-md-12">
+              <mat-grid-list cols="2">
+                <mat-grid-tile>
+                  <mat-card class="mat-elevation-z8 my-card1">
+                    <mat-card-header>
+                      <mat-card-title>Your Policy</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                      <h1><i class="far fa-file-alt"></i></h1>
+                      <p>Policy Number 000001</p>
+                    </mat-card-content>
+                  </mat-card>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                  <mat-card class="mat-elevation-z8 my-card2">
+                    <mat-card-header>
+                      <mat-card-title>Expiration Date</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                      <h1><i class="far fa-calendar-alt"></i></h1>
+                      <p>31st Dec 2018</p>
+                    </mat-card-content>
+                  </mat-card>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="2">
+                  <mat-card class="mat-elevation-z8 my-card4">
+                    <mat-card-header>
+                      <mat-card-title>Your Score</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content align="center">
+                      <h1><i class="far fa-smile"></i></h1>
+                      <h4>Good</h4>
+                    </mat-card-content>
+                  </mat-card>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1.5" class="my-card3"
+                  ><table-basic-example
+                    style="width: 100%"
+                  ></table-basic-example
+                ></mat-grid-tile>
+              </mat-grid-list>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions> <app-footer-bar></app-footer-bar> </mat-card-actions>
+      </mat-card>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

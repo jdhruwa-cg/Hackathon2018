@@ -1,0 +1,104 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="snav.toggle()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <span routerLink="/home">Agro Manager</span>
+    <span class="example-spacer"></span>
+    <img src="../icon-04.png" class="img" height="50px" />
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav #snav side false class="sidenavMy">
+    <span class="mat-h1" style="padding-left: 5%;"
+      ><i class="fas fa-user-circle"></i> Welcome John</span
+    >
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home"
+        ><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a
+      >
+      <a mat-list-item routerLink="/register"
+        ><i class="fas fa-plus"></i>&nbsp;&nbsp;Agro Profile</a
+      >
+      <a mat-list-item routerLink="/settings"
+        ><i class="fas fa-cog"></i>&nbsp;&nbsp;Settings</a
+      >
+      <a mat-list-item routerLink="/login"
+        ><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content style="background-color:#fff">
+    <div class="container-fluid">
+      <mat-card class="example-card mat-elevation-z0">
+        <mat-card-header class="justify-content-center">
+          <mat-card-title>Build Your Agro Profile</mat-card-title>
+        </mat-card-header>
+        <br />
+        <br />
+        <br />
+        <mat-card-content>
+          <div class="container-fluid col-md-4">
+            <mat-card class="mat-elevation-z8">
+              <mat-card-header class="card-header">
+                <mat-card-title>Fill in the Details</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="container-fluid col-md-12">
+                  <form class="example-form">
+                    <mat-form-field class="full-width">
+                      <input matInput placeholder="Device Type" />
+                    </mat-form-field>
+                    <br />
+                    <mat-form-field class="full-width">
+                      <input matInput placeholder="Model" />
+                    </mat-form-field>
+                    <br />
+                    <mat-form-field class="full-width">
+                      <input matInput placeholder="Brand" />
+                    </mat-form-field>
+                    <br />
+
+                    <mat-form-field class="full-width">
+                      <input matInput placeholder="Registration No." />
+                    </mat-form-field>
+                    <br />
+                    <mat-form-field>
+                      <input
+                        matInput
+                        [matDatepicker]="picker"
+                        placeholder="Date of Purchase"
+                      />
+                      <mat-datepicker-toggle
+                        matSuffix
+                        [for]="picker"
+                        class="full-width"
+                      ></mat-datepicker-toggle>
+                      <mat-datepicker
+                        #picker
+                        class="full-width"
+                      ></mat-datepicker>
+                    </mat-form-field>
+                    <br />
+                    <button
+                      mat-raised-button
+                      color="#16a085"
+                      routerLink="/home"
+                      class="loginBtn"
+                    >
+                      Register
+                    </button>
+                  </form>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </mat-card-content>
+        <mat-card-actions> <app-footer-bar></app-footer-bar> </mat-card-actions>
+      </mat-card>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

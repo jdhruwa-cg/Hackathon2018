@@ -1,0 +1,26 @@
+.mat-toolbar.mat-primary {
+  background: linear-gradient(60deg, #56ab2f, #a8e063);
+  color: #fff;
+}
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+.signin-content {
+  padding: 60px 1rem;
+}
+.full-width-input {
+  width: 100%;
+}
+
+.loginBtn {
+  width: 33%;
+}
+.mat-fab,
+.mat-flat-button,
+.mat-mini-fab,
+.mat-raised-button {
+  color: rgb(238, 238, 238);
+  background-color: #56ab2f;
+}

@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+/* body {
+  margin-bottom: 60px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+} */
+/* body,
+wrapper {
+  min-height: 100vh;
+}
+.flex-fill {
+  flex: 1 1 auto;
+} */

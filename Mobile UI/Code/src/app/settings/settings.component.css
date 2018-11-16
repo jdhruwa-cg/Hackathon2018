@@ -1,0 +1,37 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.sidenavMy {
+  width: 350px;
+}
+.mat-toolbar.mat-primary {
+  background: linear-gradient(60deg, #56ab2f, #a8e063);
+  color: #fff;
+}
+.container-fluid {
+  padding: 0px;
+}
+
+.example-card {
+  height: 1240px;
+}
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .example-card {
+    height: 640px;
+  }
+}
+
+@media only screen and (max-height: 823px) {
+  .example-card {
+    height: 766px;
+  }
+}

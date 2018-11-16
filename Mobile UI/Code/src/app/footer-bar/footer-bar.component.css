@@ -1,0 +1,19 @@
+.mat-toolbar {
+  background: #f3f3f3;
+  color: #7a7a7a;
+}
+/* .footer {
+  position: fixed;
+  bottom: 0;
+
+  height: 60px;
+  line-height: 23px;
+} */
+.mat-toolbar-row {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.bottom-button:hover {
+  cursor: pointer;
+}

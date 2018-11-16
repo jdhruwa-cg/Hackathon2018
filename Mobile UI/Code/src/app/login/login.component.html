@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <span routerLink="" color="primary">Agro Manager</span>
+  <span class="example-spacer"></span>
+  <img src="../icon-04.png" class="img" height="50px" />
+</mat-toolbar>
+<div class="signin-content">
+  <mat-card>
+    <mat-card-header class="justify-content-center">
+      <mat-card-title>Login</mat-card-title>
+      <mat-card-subtitle
+        >Please enter your email and password</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="Username" formControlName="userName" />
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <input
+            matInput
+            type="password"
+            placeholder="Password"
+            formControlName="password"
+          />
+        </mat-form-field>
+        <button
+          mat-raised-button
+          color="#16a085"
+          routerLink="/home"
+          class="loginBtn"
+        >
+          Login
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,56 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.sidenavMy {
+  width: 350px;
+}
+.mat-toolbar.mat-primary {
+  background: linear-gradient(60deg, #56ab2f, #a8e063);
+  color: #fff;
+}
+.container-fluid {
+  padding: 0px;
+}
+
+.example-card {
+  height: 1240px;
+}
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .example-card {
+    height: 640px;
+  }
+}
+
+@media only screen and (max-height: 823px) {
+  .example-card {
+    height: 766px;
+  }
+}
+.full-width {
+  width: 100%;
+}
+.card-header {
+  background: linear-gradient(60deg, #56ab2f, #a8e063);
+  border-radius: 3px;
+  margin-top: -60px;
+  padding: 5px;
+  padding-bottom: 6px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.mat-fab,
+.mat-flat-button,
+.mat-mini-fab,
+.mat-raised-button {
+  color: rgb(238, 238, 238);
+  background-color: #56ab2f;
+}
