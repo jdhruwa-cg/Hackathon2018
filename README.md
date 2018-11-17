@@ -3,7 +3,7 @@
 <body>
  <p>
 <h3>Idea:</h3>
- <p>To provide an insurance to the farmers on agriculture equipments.</p>
+ <p>To create an integrated insurance platform.</p>
  </p>
 
 <h3>Content Description:</h3>
